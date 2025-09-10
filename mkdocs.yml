@@ -1,2 +1,4 @@
 site_name: My Docs
+nav:
+- 首页:index.md
 theme: material
