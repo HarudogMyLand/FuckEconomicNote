@@ -1,17 +1,38 @@
 site_name: My Docs
 nav:
-- 首页: index.md
-- About: about.md
+  - 首页: index.md
+  - About: about.md
+
 theme: 
   name: material
   palette:
-  - scheme: default
-    toggle:
-      icon: material/weather-sunny
-      name: Switch to dark mode
-  - scheme: slate
-    toggle:
-      icon: material/weather-night
-      name: Swith to light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
 
-  media: "(prefers-color-scheme: light)"
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+media: "(prefers-color-scheme: light)"
+copyright: Copyright &copy; 2025 - 2030 Not a real copyright
