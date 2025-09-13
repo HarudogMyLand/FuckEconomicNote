@@ -1,7 +1,6 @@
-site_name: My Docs
-nav:
-  - 首页: index.md
-  - About: about.md
+site_name: Harudog's Note
+site_description: Harudog's Learning Note and His Learning Resources
+site_author: Harudog, the happy puppy
 
 theme: 
   name: material
@@ -24,15 +23,26 @@ theme:
 
 
 markdown_extensions:
-  - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
-  - admonition
+  - admonition  # 基本 admonition 支持
   - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - footnotes
+  - pymdownx.blocks.admonition  # 添加这个扩展来支持 [!note] 语法
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-media: "(prefers-color-scheme: light)"
 copyright: Copyright &copy; 2025 - 2030 Not a real copyright
+
+# Navigation Part
+
+nav:
+  - 首页: index.md
+  - 微观经济: 
+    - 微观经济学导入: microeco/tutorial1.md
+  - About: about.md
