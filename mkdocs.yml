@@ -16,10 +16,12 @@ theme:
   font:
     text: Roboto
   features:
+    - navigation.sidebar
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - toc.integrate
+    # - navigation.expand
 
 
 markdown_extensions:
@@ -45,4 +47,7 @@ nav:
   - 首页: index.md
   - 微观经济: 
     - 微观经济学导入: microeco/tutorial1.md
+    - 消费者理论一: microeco/tutorial2.md
+  - 基础物理学B:
+    - 热学: physics/tutorial1.md
   - About: about.md
