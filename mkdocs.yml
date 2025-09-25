@@ -48,6 +48,7 @@ nav:
   - 微观经济: 
     - 微观经济学导入: microeco/tutorial1.md
     - 消费者理论一: microeco/tutorial2.md
-  - 基础物理学B:
-    - 热学: physics/tutorial1.md
+    - 消费者理论二: microeco/tutorial3.md
+  # - 基础物理学B:
+  #   - 热学: physics/tutorial1.md
   - About: about.md
