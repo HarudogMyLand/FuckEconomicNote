@@ -2,8 +2,9 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+非常抱歉，本网站甚至没有完成，故不能保证任何安全性
+
+No Security Promised!
 
 | Version | Supported          |
 | ------- | ------------------ |
