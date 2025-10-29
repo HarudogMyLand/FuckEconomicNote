@@ -49,6 +49,14 @@ nav:
     - 微观经济学导入: microeco/tutorial1.md
     - 消费者理论一: microeco/tutorial2.md
     - 消费者理论二: microeco/tutorial3.md
+    - 消费者理论三: microeco/tutorial4.md
+    - 消费者理论四: microeco/tutorial5.md
+    - 消费者理论与市场: microeco/tutorial6.md
   # - 基础物理学B:
   #   - 热学: physics/tutorial1.md
+  - 金融学:
+    - 金融导论: finance/1. 金融主体关系.md
+    - 金融货币: finance/2. 金融货币.md
+    - 金融外汇: finance/3. 金融外汇.md
+    - 金融信用: finance/4. 金融信用.md
   - About: about.md
