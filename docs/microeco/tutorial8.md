@@ -53,16 +53,22 @@ $$
 $$
 \frac{\partial \Pi(x)}{\partial q}=\frac{\partial R}{\partial q} - \frac{\partial C}{\partial q}=0
 $$
-即使得自己的成本函数满足：
+使得自己的成本函数满足：
 $$
 \frac{\partial C}{\partial q}=P
 $$
+
+如何控制产量与成本？
+
+## 产量与成本的控制
 
 ### 短期下产量选择
 
 由于长短期的成本函数是不同的，我们将其视为两个部分来讨论。
 
 #### 短期供给曲线
+
+#### 短期市场供给曲线
 
 ### 长期下产量选择
 
