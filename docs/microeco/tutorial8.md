@@ -66,6 +66,18 @@ $$
 
 ### 短期下产量选择
 
+短期中，资本数量恒定，因此必须选择可变投入（在这里是劳动和原料）水平使得利润最大化。利润最大化条件是：编辑成本曲线上升阶段，边际收益等于边际成本。
+
+
+
+<center><svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="2"/>
+  <text x="360" y="255">q</text>
+  <line x1="50" y1="250" x2="50" y2="50" stroke="black" stroke-width="2"/>
+  <text x="35" y="45">p</text>
+  <line x1="50" y1="250" x2="350" y2="50" stroke="red" stroke-width="3"/>
+  <text x="150" y="70" fill="red">S = MC = 10q</text>
+</svg></center>
 
 
 #### 短期供给曲线
