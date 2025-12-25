@@ -27,22 +27,6 @@
 
 **金融机构的经营模式**：分业经营与混业经营
 
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-            font-family: "Microsoft YaHei", "SimHei", sans-serif;
-        }
-    </style>
-</head>
-<body>
 <svg width="850" height="400" viewBox="0 0 850 400" xmlns="http://www.w3.org/2000/svg" style="background-color: #f4f4f4;">
     <!-- 左侧：分业经营 (饼图) -->
     <g transform="translate(220, 180)">
@@ -106,8 +90,7 @@
     <!-- 右侧标题 -->
     <text x="630" y="328" font-size="18" fill="#000" text-anchor="middle" font-weight="bold">金融机构混业经营</text>
 </svg>
-</body>
-</html>
+
 1. 分业经营 (Segregated System)：银证保业务严格分离互不交叉
 2. 混业经营 (Universal Banking or Mixed System)：全能银行
 
