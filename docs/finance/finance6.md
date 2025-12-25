@@ -85,12 +85,20 @@ $$
 
 核心思想是风险定价，市场只为**系统性风险**提供回报。
 
+公式示意：
+$$
+\overline{r_a}=r_f+\beta_{\alpha}(\overline{r_m}-r_f)
+$$
+
+
 - 风险拆分：风险分为系统性和非系统性
 - 贝塔值$\beta$：系统性风险度量
 - 资本市场线：CML描述**有效组合**的风险收益关系
 - 证券市场线：SML描述**所有资产**的风险收益关系
 
-缺点在于：假设太多，市场有效、投资者同质、市场组合也可知（然而谁也不知道真正的市场组合将会是什么）；同时，某些实证检验效果也不好，$\beta$ 不完全能解释股票收益率差异
+无效组合位于 CML 下方，低估股票位于 SML 上方
+
+缺点在于：假设太多，市场有效、投资者同质、市场组合也可知（然而谁也不知道真正的市场组合将会是什么），CAPM 依赖于**效用理论**（投资者优化均值-方差）和**市场均衡**；同时，某些实证检验效果也不好，$\beta$ 不完全能解释股票收益率差异。
 
 #### 有效市场假说 EMH
 
@@ -115,6 +123,8 @@ $$
 - 因子：可能是GDP，通胀、利率变化乃至油价
 - 无套利原理：风险相同的资产，其预期收益率必然相同。
 
+APT 依赖于**无套利原理**（No-Arbitrage），不需要假设投资者也是理性的，也不需要假设市场组合存在。这是 APT 与 CAPM 的本质区别。
+
 缺点：APT 没有告诉我们这些因子具体是什么，难道让我自己去找吗？
 
 #### FF三因子模型
@@ -127,8 +137,16 @@ $$
 - 规模因子（SMB）：小盘股组合收益率 - 大盘股组合收益率
 - 价值因子（HML）：高账面市值比组合收益率 - 低账面是指比组合收益率
 
+
+
+**SMB > 0：** 说明**小盘股**长期跑赢大盘股（小盘股效应）。
+
+**HML > 0：** 说明**价值股**（高账面市值比）长期跑赢成长股（价值效应）
+
 该模型大大提高了对股票收益率的解释力，成为学术界和业界最常用的多因子模型之一。
 
 缺点：缺乏理论基础：，这两个因子是“凑数据”凑出来的，为什么它们能赚钱？Fama 自己也说不清，他认为这可能是对未知风险的补偿，后来又出现了动量因子（Carhart 四因子模型）和更多因子（Fama - French 五因子模型），如此下去可能变成超级无套利模型。
+
+当然，严格来说金融市场确实是无比混沌随时改变的，无数的因子在此交互作用，感兴趣的朋友可以搜集混沌系统与金融学的关系。
 
 <center><svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" style="background-color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">     <defs>         <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">             <path d="M0,0 L0,6 L9,3 z" fill="#555" />         </marker>         <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">             <feGaussianBlur in="SourceAlpha" stdDeviation="2" />             <feOffset dx="2" dy="2" result="offsetblur" />             <feComponentTransfer>                 <feFuncA type="linear" slope="0.3" />             </feComponentTransfer>             <feMerge>                 <feMergeNode />                 <feMergeNode in="SourceGraphic" />             </feMerge>         </filter>     </defs>          <text x="400" y="40" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">现代金融理论演进路径</text>      <!-- 节点1: MPT -->     <g transform="translate(50, 100)">         <rect x="0" y="0" width="180" height="80" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" filter="url(#shadow)" />         <text x="90" y="35" font-size="18" font-weight="bold" fill="#0d47a1" text-anchor="middle">MPT</text>         <text x="90" y="60" font-size="14" fill="#555" text-anchor="middle">理论起点</text>     </g>      <!-- 节点2: CAPM -->     <g transform="translate(310, 100)">         <rect x="0" y="0" width="180" height="80" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#shadow)" />         <text x="90" y="35" font-size="18" font-weight="bold" fill="#1b5e20" text-anchor="middle">CAPM</text>         <text x="90" y="60" font-size="14" fill="#555" text-anchor="middle">简化与均衡</text>     </g>      <!-- 节点3: EMH -->     <g transform="translate(570, 100)">         <rect x="0" y="0" width="180" height="80" rx="10" ry="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" filter="url(#shadow)" />         <text x="90" y="35" font-size="18" font-weight="bold" fill="#4a148c" text-anchor="middle">EMH</text>         <text x="90" y="60" font-size="14" fill="#555" text-anchor="middle">补充与挑战</text>     </g>      <!-- 节点4: APT -->     <g transform="translate(310, 280)">         <rect x="0" y="0" width="180" height="80" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" filter="url(#shadow)" />         <text x="90" y="35" font-size="18" font-weight="bold" fill="#e65100" text-anchor="middle">APT</text>         <text x="90" y="60" font-size="14" fill="#555" text-anchor="middle">对CAPM的改进</text>     </g>      <!-- 节点5: F-F三因子 -->     <g transform="translate(570, 280)">         <rect x="0" y="0" width="180" height="80" rx="10" ry="10" fill="#ffebee" stroke="#f44336" stroke-width="2" filter="url(#shadow)" />         <text x="90" y="35" font-size="18" font-weight="bold" fill="#b71c1c" text-anchor="middle">F-F 三因子</text>         <text x="90" y="60" font-size="14" fill="#555" text-anchor="middle">具体化与实证</text>     </g>      <!-- 连接线 -->     <!-- MPT -> CAPM -->     <line x1="230" y1="140" x2="300" y2="140" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />          <!-- CAPM -> EMH -->     <line x1="490" y1="140" x2="560" y2="140" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />      <!-- CAPM -> APT (向下分支) -->     <path d="M 400 180 L 400 230 L 400 270" stroke="#555" stroke-width="2" marker-end="url(#arrow)" fill="none" />      <!-- APT -> F-F -->     <line x1="490" y1="320" x2="560" y2="320" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />      <!-- 说明标签 (可选) -->     <text x="410" y="240" font-size="12" fill="#777" font-style="italic">放宽假设 / 多因子引入</text>  </svg></center>
