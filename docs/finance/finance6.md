@@ -30,3 +30,24 @@ $$
 \sigma = \sqrt{\sum^n_{i=1}\omega^2_i\sigma^2_i + \sum_{1\le i \lt j\le n} \omega_i \omega_j \sigma_i \sigma_j \rho_{ij}}
 $$
 其中 $\rho_{ij}$ 是相关系数。
+
+### 现代投资组合理论
+
+如图所示是不同投资组合下的收益率与风险组合。
+
+由于**系统风险**的存在，某些收益率与风险的组合是投资组合无法覆盖的，即无法通过分散化投资来消除。
+
+我们把投资组合覆盖区域的边界视为我们投资组合的一个极端。而**有效边界**是风险相同、收益最大，或收益相同、风险最小组合点的连线。有效边界上的资产组合为有效组合。
+
+<center><svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f5; border: 1px solid #ccc;">     <defs>         <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">             <path d="M0,0 L0,6 L9,3 z" fill="#000" />         </marker>     </defs>     <line x1="60" y1="350" x2="60" y2="60" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />     <line x1="60" y1="350" x2="530" y2="350" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />     <text x="20" y="50" class="axis-label" fill="black">期望收益率</text>     <text x="20" y="80" class="math-label" fill="black">E(r)</text>     <text x="500" y="380" class="axis-label" fill="black">风险σ</text>     <path d="M 230 330 C 130 280 100 240 100 200 C 100 160 130 120 520 80" stroke="#000" stroke-width="2" fill="none" />     <circle cx="100" cy="200" r="4" fill="black" />     <text x="75" y="205" class="point-label" fill="black">A</text>     <circle cx="300" cy="122" r="4" fill="black" />          <circle cx="115" cy="165" r="4" fill="black" />     <text x="100" y="160" class="point-label" fill="black">D</text>     <circle cx="300" cy="165" r="4" fill="black" />     <text x="310" y="185" class="point-label" fill="black">C</text>         <circle cx="180" cy="220" r="3" fill="black" />     <circle cx="210" cy="250" r="3" fill="black" />     <circle cx="260" cy="230" r="3" fill="black" />     <circle cx="330" cy="210" r="3" fill="black" />     <circle cx="400" cy="190" r="3" fill="black" />     <circle cx="450" cy="150" r="3" fill="black" />     <circle cx="380" cy="140" r="3" fill="black" />     <circle cx="220" cy="180" r="3" fill="black" />     <circle cx="280" cy="190" r="3" fill="black" />     <circle cx="350" cy="260" r="3" fill="black" />     <circle cx="420" cy="280" r="3" fill="black" />     <circle cx="320" cy="290" r="3" fill="black" />     <circle cx="250" cy="280" r="3" fill="black" />     <circle cx="140" cy="225" r="3" fill="black" />     <circle cx="480" cy="180" r="3" fill="black" />     <circle cx="350" cy="150" r="3" fill="black" />     <circle cx="420" cy="110" r="3" fill="black" />     <circle cx="250" cy="150" r="3" fill="black" />     <circle cx="480" cy="90" r="3" fill="black" />     <circle cx="220" cy="130" r="3" fill="black" />     <circle cx="180" cy="190" r="3" fill="black" />     <circle cx="400" cy="240" r="3" fill="black" />     <circle cx="115" cy="210" r="3" fill="black" />     <circle cx="440" cy="220" r="3" fill="black" /> </svg></center>
+
+如图所示，其中 $A$ 点以上就是有效边界的示意。
+
+## 利率与有价证券价值评估
+
+### 有价证券价值评估原理
+
+l证券的内在价值，是证券未来收益的现值，取决于预期收益与市场收益率水平，也称证券的理论价值。证券的内在价值采用**现金流折现法**计算。
+
+- 绝对价值评估：指将公司未来可能创造的现金流或公司未来可能分配的股息，按一定折现率进行折现，来评估公司的内在价值。
+- 相对价值评估：是通过比较公司的基本面数据和市场数据来确定股票的相对价值。有价证券的相对价值评估通常使用市盈率、市净率等指标。
